@@ -50,25 +50,41 @@ table {
 
 
 /* custom css */
+html {
+    font-size: 62.5%;
+}
 
+body {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 2vh;
+    font-family: monospace;
+}
+
+h2 {
+    font-size: 4vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header, section {
+    padding: 4% 0;
+}
 
 header nav {
     display: flex;
     justify-content: space-between;
 }
 #top {
-    display: flex;
-    justify-content: center;
-}
-
-.image-button {
     background-image: url(https://picsum.photos/800/600);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    font-size: 2rem;
-    width: 80vh;
-    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
 }
 
 footer {
@@ -80,8 +96,13 @@ footer {
 .row {
     display: flex;
     flex-direction: row;
-    padding: 2vh;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.row div {
+    width: 30%;
+    margin: 2% 0;
 }
 
 .port-element {
@@ -108,20 +129,32 @@ button a {
 }
 
 
-h1 {
-    font-size: 2vh;
-    font-family: monospace;
-}
-
-h2 {
-    font-size: 4vh;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
 @media(max-width = 800px) {
 
 }
 
 @media(max-width = 500px) {
-
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .links button {
+        width: 40%;
+        margin: 1% 0;
+    }
+    #top {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .row div {
+        width: 40%;
+    }
 }
