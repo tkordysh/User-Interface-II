@@ -48,36 +48,68 @@ table {
 	border-spacing: 0;
 }
 
+
+/* custom css */
+
+
 header nav {
     display: flex;
     justify-content: space-between;
 }
-
-.titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.projects {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-}
-
-.project_names {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.socials {
+#top {
     display: flex;
     justify-content: center;
-    padding: 50vh;
 }
 
+.image-button {
+    background-image: url(https://picsum.photos/800/600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 2rem;
+    width: 80vh;
+    height: 60vh;
+}
+
+footer {
+    background-color: lightgrey;
+    padding: 2vh;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 2vh;
+    justify-content: space-evenly;
+}
+
+.port-element {
+    text-align: center;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    padding: 1vh;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    border: white solid 1px;
+    padding: 1vh;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 h1 {
-    font-size: 8vh;
+    font-size: 2vh;
     font-family: monospace;
 }
 
@@ -86,8 +118,10 @@ h2 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h3 {
-    font-size: 3vh;
-    font-family: cursive;
+@media(max-width = 800px) {
+
 }
 
+@media(max-width = 500px) {
+
+}
