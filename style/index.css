@@ -48,36 +48,18 @@ table {
 	border-spacing: 0;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
+
+/* custom css */
+html {
+    font-size: 62.5%;
 }
 
-.titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.projects {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-}
-
-.project_names {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.socials {
-    display: flex;
-    justify-content: center;
-    padding: 50vh;
+body {
+    font-size: 1.6rem;
 }
 
 h1 {
-    font-size: 8vh;
+    font-size: 2vh;
     font-family: monospace;
 }
 
@@ -86,8 +68,93 @@ h2 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h3 {
-    font-size: 3vh;
-    font-family: cursive;
+header, section {
+    padding: 4% 0;
 }
 
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+#top {
+    background-image: url(https://picsum.photos/800/600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+}
+
+footer {
+    background-color: lightgrey;
+    padding: 2vh;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.row div {
+    width: 30%;
+    margin: 2% 0;
+}
+
+.port-element {
+    text-align: center;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    padding: 1vh;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    border: white solid 1px;
+    padding: 1vh;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+@media(max-width = 800px) {
+
+}
+
+@media(max-width = 500px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .links button {
+        width: 40%;
+        margin: 1% 0;
+    }
+    #top {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .row div {
+        width: 40%;
+    }
+}
